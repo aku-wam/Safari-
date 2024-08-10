@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    line-height: 75px;
+    background: #f1efef;
+}
+
+.navbar .logo a{
+    font-size: 30px;
+    font-weight:bold;
+    float: left;
+    color: rgb(122, 24, 24);
+    letter-spacing: 0px;
+    margin-left:20px ;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #4e2929;
+    transition: all 0.4s ease 0s;
+}
+
+.home-page {
+    background-image: url('sf2.jfif');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.booking-page {
+    height: 100vh;
+}
+
+.service-page {
+    height: 100vh;
+    background-color: black;
+}
+
+ .service-page .our-services {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background: #6d2828;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.service-page .our-services .slide .item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #000;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.service-page .our-services .slide .item:nth-child(1),
+.service-page .our-services .slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us {
+    height: 100vh;
+}
+
